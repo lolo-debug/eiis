@@ -1,6 +1,8 @@
 const Discord = require("discord.js"); 
 const { Client, RichEmbed } = require('discord.js');
-const client = new Discord.Client();bot.login("Njc1NzI2NjkwNjgwMzA3NzU4.Xj7VlA.GjpeOXOvyUw9qrm39ZWriZZg_Qc");
+const client = new Discord.Client();
+
+bot.login(process.env.TOKEN)
 
 client.on('ready', async () => {
     console.log("je suis pret")
